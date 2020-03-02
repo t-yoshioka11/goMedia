@@ -1,0 +1,17 @@
+{{ define "content" }}
+
+<form class="form-signin center" role="form" action="/login/sign_in" method="post">
+  <h2 class="form-signin-heading">
+    <i class="fa fa-comments-o">
+      GoMedia
+    </i>
+  </h2>
+  <input type="email" name="email" id="email" class="form-control" placeholder="Email" required autofocus>
+  <input type="password" name="password" id="password" class="form-control" placeholder="パスワード" required>
+  <br/>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">ログイン</button>
+  <br/>
+  <a class="lead pull-right" href="/sign_up">登録</a>
+</form>
+
+{{ end }}

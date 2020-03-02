@@ -1,0 +1,15 @@
+{{ define "content" }}
+
+<form class="form-signin" role="form" action="/sign_up/signup_account/" method="post">
+  <h2 class="form-signin-heading">
+    <i class="fa fa-comments-o">
+      GoMedia
+    </i>
+  </h2>
+  <div class="lead">登録情報</div>
+  <span class="lead"> {{ .Email }}</span>
+  <span class="lead"> {{ .Body }}</span>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">登録</button>
+</form>
+
+{{ end }}

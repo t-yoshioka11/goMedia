@@ -1,0 +1,16 @@
+{{ define "content" }}
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="lead"> <i class="fa fa-comment-o"></i> {{ .Title }} - {{ .CreatedAt }}</span>
+  </div>
+  
+  <div class="panel-body">
+    <span class="lead"> <i class="fa fa-comment"></i> {{ .Body }}</span>
+  </div>  
+  <div class="pull-right">
+    <a href="/delete?id={{.Id }}">記事を削除</a>
+  </div>
+</div>
+
+{{ end }}
